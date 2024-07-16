@@ -1,0 +1,14 @@
+project/
+├── css/
+│   └── styles.css
+├── js/
+│   └── scripts.js
+├── server/
+│   ├── server.js
+│   └── database.js
+├── views/
+│   ├── login.html
+│   ├── userlist.html
+│   └── edituser.html
+├── index.html
+└── package.json

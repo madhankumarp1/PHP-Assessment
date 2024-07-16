@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List - E-commerce Style</title>
+<link rel="stylesheet" href="./CSS/pagelist.css">
+</head>
+<body>
+    <div class="login_and_singup">
+        <a href="Login.html">Login</a>
+        <a href="registration.html">Sign-up</a>
+    </div>
+<div class="search">
+    <form class="search-form">
+        <label for="search-email">Search by Email:</label>
+        <input type="text" id="search-email" placeholder="Enter email...">
+    </form>
+</div>
+
+    <div class="container" id="container">
+        <h1>User-Management-Application</h1>
+        <div id="user_list">
+        </div>
+    </div>
+
+    <div class="from_pop" style="display: none;" id="pop" >
+        <form id="loginForm" method="POST" enctype="multipart/form-data">
+            <h2>Sign-up</h2>
+            <div class="input-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" >
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <!-- <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" >
+                <span class="error-message" id="passwordError"></span>
+            </div> -->
+            <div class="input-field">
+                <label for="imageFile">Select image:</label>
+                <input type="file" id="imageFile" name="imageFile" accept=".jpg, .jpeg, .png" >
+                <span class="error-message" id="imageError"></span>
+            </div>
+            <div class="btn">
+                <button type="submit">Sign-up</button>
+            </div>
+            <p>Already have an account? <a href="./Login.html">Log in</a></p>
+            <div class="index_page">
+              <p>
+               Home Page <a href="./index.html">Home</a>
+              </p>
+            </div>
+        </form>
+    </div>
+
+  <script src="./JS/pagelist.js"></script>
+  <script src="./JS/userupdata.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <section class="login">
+      <div class="login_sub">
+        <div class="login_image">
+          <img src="./src/login.jpg" alt="login image" />
+        </div>
+        <div class="login_form">
+          <form id="loginForm"  method="POST" enctype="multipart/form-data">
+            <h2>Log-in</h2>
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email"  />
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="input-field">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password"/>
+              <span class="error-message" id="passwordError"></span>
+            </div>
+            <div class="erro">
+            <!-- <div class="input-image">
+              <label for="img">Select image:</label>
+              <input type="file" id="imageFile" name="imageFile" accept=".jpg, .jpeg, .png" >             
+              </div>
+              <span class="error-message" id="imageError"></span>
+            </div> -->
+            <div class="btn">
+              <button type="submit">Log-in</button>
+            </div>
+            <p>
+              Don't have an account? <a href="./registration.html">Sign up</a>
+            </p>
+            <div class="index_page">
+              <p>
+               Home Page <a href="./index.html">Home</a>
+              </p>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="./JS/script.js"></script> -->
+    <script src="./JS/login.js"></script>
+
+
+  </body>
+</html>
